@@ -1,8 +1,8 @@
 class Node {
 public:
-    Node();
+    Node();     //constructor
     Node(int v);
-    ~Node();
+    ~Node();    //destructor
     Node* left;
     Node* right;
     int value;

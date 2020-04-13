@@ -3,11 +3,11 @@
 using std::string;
 class Tree {
 public:
-    Tree(int v);
+    Tree(int v);        //constructor
     Tree();
-    ~Tree();
-    void insert(int v);
-    void remove(int v);
+    ~Tree();        //destructor
+    void insert(int v);    //insert my root
+    void remove(int v);     //remove root
     string inorder();
     string preorder();
     string postorder();
@@ -17,16 +17,16 @@ public:
     unsigned int height();
 
 private:
-    void insert(int v, Node* node);
-    string inorder(Node* node);
-    string preorder(Node* node);
-    string postorder(Node* node);
-    unsigned int countNodes(Node* node);
-    unsigned int countEdges(Node* node);
-    unsigned int countLeafs(Node* node);
-    unsigned int height(Node* node);
+    void insert(int v, Node* node);     //insert a node in my tree  
+    string inorder(Node* node);     //show my tree in inorder
+    string preorder(Node* node);        //show my tree in preorder
+    string postorder(Node* node);       //show my tree in postorder
+    unsigned int countNodes(Node* node);     //count the number of nodes
+    unsigned int countEdges(Node* node);    // count the number of edges
+    unsigned int countLeafs(Node* node);    // count the number of leafs
+    unsigned int height(Node* node);    //count the height of my tree
     Node* getMinNode(Node* node);
-    Node* remove(int v, Node* node);
+    Node* remove(int v, Node* node);        //delete a node from my tree
     Node* root;
 };
 
